@@ -30,6 +30,7 @@ import {
 export class HomePage {
   nombre = ''; // se conecta con el input
   saludo = ''; // lo que mostramos al apretar el botón
+  ciudad = ''; // se conecta con el input
 
   saludar() {
     this.saludo = this.nombre ? `¡Hola, ${this.nombre}!` : '¿Cómo te llamas?';

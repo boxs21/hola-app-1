@@ -13,6 +13,14 @@
       [(ngModel)]="nombre"
     ></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-input
+      label="Tu Ciudad"
+      labelPlacement="floating"
+      placeholder="Escribe tu ciudad"
+      [(ngModel)]="ciudad"
+    ></ion-input>
+  </ion-item>
 
   <ion-button expand="block" (click)="saludar()" [disabled]="!nombre" >Saludar</ion-button>
 
