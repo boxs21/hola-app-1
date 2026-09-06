@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import {
   IonHeader,
   IonToolbar,
@@ -6,6 +7,7 @@ import {
   IonContent,
   IonButtons,
   IonBackButton,
+  IonButton,
 } from '@ionic/angular';
 
 @Component({
@@ -19,6 +21,8 @@ import {
     IonContent,
     IonButtons,
     IonBackButton,
+    IonButton,
+    RouterLink,
   ],
 })
 export class AcercaPage {}
