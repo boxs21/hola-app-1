@@ -33,6 +33,6 @@ export class HomePage {
   ciudad = ''; // se conecta con el input
 
   saludar() {
-    this.saludo = this.nombre ? `¡Hola, ${this.nombre}!` : '¿Cómo te llamas?';
+    this.saludo = `Hola ${this.nombre} de ${this.ciudad} !`;
   }
 }
