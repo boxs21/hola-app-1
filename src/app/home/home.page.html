@@ -14,7 +14,7 @@
     ></ion-input>
   </ion-item>
 
-  <ion-button expand="block" (click)="saludar()">Saludar</ion-button>
+  <ion-button expand="block" (click)="saludar()" [disabled]="!nombre" >Saludar</ion-button>
 
   @if (saludo) {
     <h1 class="ion-text-center">{{ saludo }}</h1>
