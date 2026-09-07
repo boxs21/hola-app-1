@@ -1,0 +1,7 @@
+{
+  "name": "hola-app-parte-1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

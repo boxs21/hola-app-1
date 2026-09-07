@@ -1,0 +1,30 @@
+<!-- Paso 3: el ion-header de antes ahora es el componente reutilizable -->
+<app-encabezado titulo="Saludador"></app-encabezado>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input
+      label="Tu nombre"
+      labelPlacement="floating"
+      placeholder="Escribe tu nombre"
+      [(ngModel)]="nombre"
+    ></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="saludar()">Saludar</ion-button>
+
+  @if (saludo) {
+    <h1 class="ion-text-center">{{ saludo }}</h1>
+  }
+
+  <ion-button expand="block" fill="outline" routerLink="/acerca">
+    Acerca de
+  </ion-button>
+
+  <!-- Paso 4: el botón a la ruta hija y el hueco donde se pinta -->
+  <ion-button expand="block" [routerLink]="['/home/consejo']">
+    Ver consejo (ruta hija)
+  </ion-button>
+
+  <router-outlet></router-outlet>
+</ion-content>
