@@ -1,5 +1,4 @@
-<!-- Paso 3: el ion-header de antes ahora es el componente reutilizable -->
-<app-encabezado titulo="Saludador"></app-encabezado>
+<app-encabezado titulo="Saludador" color="primary" subtitulo="Bienvenido"></app-encabezado>
 
 <ion-content class="ion-padding">
   <ion-item>
@@ -17,13 +16,12 @@
     <h1 class="ion-text-center">{{ saludo }}</h1>
   }
 
-  <ion-button expand="block" fill="outline" routerLink="/acerca">
-    Acerca de
-  </ion-button>
-
-  <!-- Paso 4: el botón a la ruta hija y el hueco donde se pinta -->
   <ion-button expand="block" [routerLink]="['/home/consejo']">
     Ver consejo (ruta hija)
+  </ion-button>
+
+  <ion-button expand="block" [routerLink]="['/home/ayuda']">
+    Ver ayuda (ruta hija)
   </ion-button>
 
   <router-outlet></router-outlet>

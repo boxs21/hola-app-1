@@ -1,10 +1,20 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar [color]="color">
     @if (volverA) {
       <ion-buttons slot="start">
         <ion-back-button [defaultHref]="volverA"></ion-back-button>
       </ion-buttons>
     }
     <ion-title>{{ titulo }}</ion-title>
+    @if (mostrarAcerca) {
+      <ion-buttons slot="end">
+        <ion-button routerLink="/acerca">Acerca de</ion-button>
+      </ion-buttons>
+    }
   </ion-toolbar>
+  @if (subtitulo) {
+    <ion-toolbar [color]="color">
+      <ion-title size="small">{{ subtitulo }}</ion-title>
+    </ion-toolbar>
+  }
 </ion-header>
