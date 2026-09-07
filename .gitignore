@@ -1,0 +1,5 @@
+# evita basura de build/deps si algo corre parado en la raíz por error
+node_modules/
+.angular/
+www/
+.DS_Store
